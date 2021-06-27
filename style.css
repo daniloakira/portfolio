@@ -1,20 +1,21 @@
-html{
-  scroll-behavior: smooth;
-}
+
+
+
 body{
   background: url("img/Black-and-red-striped-arrow-abstract_2880x1800.jpg") no-repeat;
   background-size: 3000px;
+  display: grid;
 }
 
 header {
- display: flex;
+ display: grid;
  align-items: center;
  justify-content: center;
   background-image: repeating-linear-gradient(darkred,red, darkred);
   margin-top: -10px;
    margin-left: 500px; 
   width: 900px;
-  position:fixed
+  
   }
 
 header p{
@@ -38,11 +39,12 @@ header p{
   }
 }
 #index{
-   display: flex;
+   display: grid;
    align-content: center;
    justify-content: center;
    text-align: center;
-  margin-bottom: 280px;
+  margin-bottom: 50px;
+  margin-top: -50px;
 }
 .tituloindex{
   
@@ -67,9 +69,10 @@ font-size: 24px;
  justify-content:center;
  margin-top: -10px;
  background-image: radial-gradient(darkred,red );
- position: fixed;
- margin-left: 540px;
- margin-top: 130px;
+
+ margin-left: 500px;
+ margin-right: 500px;
+ 
  border-radius: 10px;
  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.9);
  
@@ -102,11 +105,12 @@ font-size: 24px;
 }
 
 section{
-  height: 590px;
+  height: 380px;
+  display: inline-flex;
 }
 
 .titulo{
-  display: flexbox;
+  display: inline-flex;
   font-family: 'Permanent Marker', cursive;
   font-size: 30px;
   padding-left: 100px;
@@ -126,8 +130,9 @@ color: antiquewhite;
   font-family: 'Permanent Marker', cursive;
   font-size: 30px;
  align-items: center;
- margin-top: 200px;
+ margin-top: 0px;
    text-align: center;
+   margin-left: 30px;
   color:red;
   text-shadow: antiquewhite 1px 1px;
 }
@@ -136,7 +141,7 @@ color: antiquewhite;
   font-family: 'Permanent Marker', cursive;
   font-size: 30px;
  align-items: center;
- padding-top: 200px;
+
    text-align: center;
   color:red;
   text-shadow: antiquewhite 1px 1px;
@@ -156,7 +161,8 @@ color: antiquewhite;
    align-items: center;
    justify-content: center;
    color: antiquewhite;
-   margin-bottom: 270px;
+   margin-bottom: 5px;
+   margin-top: 0px;
    
  }
  #contato{
@@ -164,7 +170,7 @@ color: antiquewhite;
    align-items: center;
    justify-content: center;
    color: antiquewhite;
-   margin-bottom: 280px;
+   margin-bottom: 0px;
  }
  nav ul{
    display: flex;
@@ -193,9 +199,10 @@ color: antiquewhite;
 
  #diplomas {
    width: 880px;
-   list-style: none;
+   
+   
    display: flex;
-   margin:  10px 500px;
+   margin:  -0px 500px 5px;
    text-align: center;
    
  }
@@ -203,7 +210,7 @@ color: antiquewhite;
 
 
 footer{
-  display: flex;
+  display: inline-flex;
  align-items: center;
  justify-content: center;
   background-image: repeating-linear-gradient(darkred,red, darkred);
@@ -214,3 +221,29 @@ color: antiquewhite;
   margin-top: 275px;
 
 }
+
+@media screen and (max-width: 767px) {
+    .um {
+        background: rgb(184, 222, 236);
+    }
+   
+}
+
+
+/* min-width */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .dois {
+        background: rgb(103, 180, 224);
+    }
+   
+}
+
+
+/* min-width & max-width */
+
+@media screen and (min-width: 1024px) {
+    .tres {
+        background: rgb(54, 112, 236);
+    }
+  }
